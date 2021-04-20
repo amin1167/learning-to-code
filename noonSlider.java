@@ -26,7 +26,7 @@ public static void main(String[] args) throws InterruptedException {
 System.setProperty("webdriver.chrome.driver", "c:\\work\\chromedriver.exe");
 WebDriver driver = new ChromeDriver();
 driver.get("https://www.noon.com/uae-en/");
-driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 //driver.manage().window().maximize();
 JavascriptExecutor js = ( JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,500)" );
